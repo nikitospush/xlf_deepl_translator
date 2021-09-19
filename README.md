@@ -1,13 +1,21 @@
-# xliff-sap-translator
-Translate .xlf files using DeepL Translator API for SAP
+# xlf translator 
 
-1. Download files from Github
-2. Extract archive into your web directory from your server / local pc
-3. Copy .xlf files into `/src` folder
-4. Locate to the website (directory) with your browser
-5. Start automatically translating
-6. Your ready translated .xlf files are now in the `/target` folder
+Instruction: 
+1. download repo
+2. put tag body to src/messages.en.xlf
+3. modify in src/messages.en.xlf source-language and target-language 
+```
+file source-language="en" target-language='it' datatype="plaintext" original="file.ext"
+```
+4. run project. for exmaple 
+```bash
+symfony serve 
+```
 
-### Tested successfully with DeepL Pro API v1 and SAP NetWeaver Version 7400.3.12.1129
+5. put your DeepL token
 
-Supported languages: Englisch, German, French, Spanish, Italian, Dutch, Polish
+Supported languages: English, German, French, Spanish, Italian, Dutch, Polish
+
+thanks Teddy95
+
+
